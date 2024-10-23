@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Bio with Background Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="background-video">
+    <source src="lofi.mp4" type="video/mp4">
+    
+  </video>
+
+  <!-- Audio Background with User Control -->
+  <audio id="background-audio" loop >
+    <source src="song.mp3" type="audio/mpeg">
+    
+  </audio>
+
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    
+  </audio>
+  
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById('background-audio');
+      audio.muted = false; // Unmute the audio
+      audio.play(); // Play the audio
+      document.getElementById('play-button').style.display = 'none'; // Hide button after play
+    }
+  </script>
+
+
+
+  <!-- Bio Container -->
+  <div class="bio-container">
+    <div class="profile-pic">
+      <img src="pfp.png" alt="Profile Picture">
+    </div>
+    <div class="bio-content">
+      <h1 class="bio-name">Laggy Lag</h1>
+      <p class="bio-description">Hi, I'm LAG! AKA LAGGY , normal 16 year boy  who loves to develop webs.</p>
+
+     
+      
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <p class="social glow"><strong>Discord:</strong> lag_7</p>
+        <p class="social glow"><strong>Instagram:</strong> lagk73</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
